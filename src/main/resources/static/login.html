@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>登录</title>
+    <title>欢迎来到登录页面</title>
+    <script>
+        function login() {
+            // 登录之前，对输入进行检查
+            var userName = document.getElementById("userName").value;
+            var passWord = document.getElementById("passWord").value;
+            // 通过ajax技术向服务器发送请求
+            if (userName == 123 && passWord == 123) {
+                window.location.href = 'index.html';
+            } else {
+                alert("账号或者密码输入错误，请重新输入！！！");
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1>你好，我是登陆页面</h1>
+<body background="img/vehicle.png" style="background-repeat: no-repeat; background-size:100%;">
+    <h1 style="margin-left: 70px">登陆页面</h1>
+    <div style="float: right; margin-right: 50px; font-size: 20px">
+        账号：<input id="userName" type="text">
+        <br><br>
+        密码：<input id="passWord" type="text">
+        <br><br>
+        <div style="margin-left: 40px; margin-right: 40px">
+            <input type="button" value="注册">
+            <input type="button" value="登录" onclick="login()" style="float: right">
+        </div>
+    </div>
 </body>
 </html>

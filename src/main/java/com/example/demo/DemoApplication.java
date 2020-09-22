@@ -8,7 +8,7 @@ public class DemoApplication {
 
     public static void main(String[] args) {
         // 初始化SpringContext
-        System.out.println("你好");
+        //System.out.println("你好");
         SpringApplication.run(DemoApplication.class, args);
     }
 }
